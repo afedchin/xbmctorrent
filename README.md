@@ -21,11 +21,11 @@ Follow XBMCtorrent
 
 Supported Platforms
 -------------------
-* Windows x32 x64
-* OS X x32 and x64
-* Linux x32 and x64
+* Windows x32 and x64
+* OS X x64
+* Linux arm, armv7 arm64, x32 and x64
 * Raspberry Pi
-* Android 4.0+
+* Android 4.0+ (arm, x86, x64)
 
 How it works
 ------------
