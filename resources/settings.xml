@@ -27,7 +27,7 @@
 
         <setting label="RuTor.org" type="lsep"/>
         <setting id="rutor_enabled" type="bool" label="Enable" default="true" />
-        <!--<setting id="rutor_usesearch" type="bool" label="Search movie info at internet" default="false" />-->
+        <setting id="rutor_usesearch" type="bool" label="Search movie info at internet" default="false" />
 
         <setting label="Torrents3D.ru" type="lsep"/>
         <setting id="t3d_enabled" type="bool" label="Enable" default="true" />
@@ -36,7 +36,7 @@
 
         <setting label="RuTracker.org" type="lsep"/>
         <setting id="rutracker_enabled" type="bool" label="Enable" default="true" />
-        <!--<setting id="rutracker_usesearch" type="bool" label="Search movie info at internet" default="false" />-->
+        <setting id="rutracker_usesearch" type="bool" label="Search movie info at internet" default="false" />
         <setting id="rutracker_login" type="text" label="Login" default="" />
         <setting id="rutracker_passw" type="text" label="Password" option="hidden" default="" />
     </category>
