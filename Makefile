@@ -34,13 +34,13 @@ bootstraper:
 	zip -9 -r $(NAME).zip $(NAME)
 	rm -rf $(NAME)
 
-addon.xml:
-	sed s/\$$VERSION/$(VERSION)/g < addon.xml.tpl > $@
+addon_xml:
+	mkdir -p $(NAME)
+	sed s/\$$VERSION/$(VERSION)/g < addon.xml.tpl > $(NAME)/addon.xml
 
-$(ZIP_FILE): addon.xml
+$(ZIP_FILE): addon_xml
 	git archive --format zip --prefix $(NAME)/ --output $(ZIP_FILE) $(GIT_VERSION)
 	mkdir -p $(NAME)/resources/bin
-	ln -s -f `pwd`/addon.xml $(NAME)
 	zip -9 -r -g $(ZIP_FILE) $(NAME)/addon.xml
 	for arch in $(ARCHS); do \
 		ln -s `pwd`/resources/bin/$$arch $(NAME)/resources/bin/$$arch; \
@@ -50,9 +50,9 @@ $(ZIP_FILE): addon.xml
 
 zip: $(ZIP_FILE)
 
-zipfiles: addon.xml
+zipfiles:
 	for arch in $(ARCHS); do \
-		$(MAKE) $$arch; \
+		$(MAKE) zip ARCHS=$$arch ZIP_SUFFIX=$$arch.zip; \
 	done
 
 clean_arch:
