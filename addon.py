@@ -1,11 +1,12 @@
-import sys, os
+import sys
+import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'resources', 'site-packages'))
 from installer import invoke_installer
 
 try:
     invoke_installer()
 
-    from xbmctorrent import monkey_patches
+    from xbmctorrent import monkey_patches  # noqa: F401
     from xbmctorrent import plugin
 
     if __name__ == '__main__':
