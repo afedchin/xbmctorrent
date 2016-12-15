@@ -1,6 +1,6 @@
 NAME = plugin.video.xbmctorrent
 GIT = git
-GIT_VERSION = $(shell $(GIT) describe --tags --always)
+GIT_VERSION = $(shell $(GIT) describe --tags)
 VERSION = $(patsubst v%,%,$(GIT_VERSION))
 ARCHS = \
 	android_arm \
@@ -18,7 +18,7 @@ ARCHS = \
 ZIP_SUFFIX = zip
 ZIP_FILE = $(NAME)-$(VERSION).$(ZIP_SUFFIX)
 
-all: clean zipfiles zip
+all: clean zip
 
 .PHONY: $(ARCHS)
 
