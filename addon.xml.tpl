@@ -7,23 +7,16 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.repository" name="XBMCtorrent (RU) Autoupdate Repository">
-        <info compressed="false">http://afedchin.github.io/repository/addons.xml</info>
-        <checksum>http://afedchin.github.io/repository/addons.xml.md5</checksum>
-        <datadir zip="true">http://afedchin.github.io/repository/</datadir>
+        <info compressed="false">https://afedchin-repo.herokuapp.com/addons.xml</info>
+        <checksum>https://afedchin-repo.herokuapp.com/addons.xml.md5</checksum>
+        <datadir zip="true">https://afedchin-repo.herokuapp.com/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <website><![CDATA[http://j.mp/xbmctorrent]]></website>
-        <forum><![CDATA[http://j.mp/xbmctorrent]]></forum>
         <source><![CDATA[https://github.com/steeve/xbmctorrent]]></source>
         <language></language>
         <license><![CDATA[GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007]]></license>
-        <summary><![CDATA[XBMCtorrent: Torrent streaming for XBMC.]]></summary>
-        <description><![CDATA[Watch torrents directly from XBMC, without waiting.
-
-To get the latest updates:
-Twitter: twitter.com/xbmctorrent
-Facebook: facebook.com/xbmctorrent
-XBMC HUB: j.mp/xbmctorrent]]></description>
+        <summary><![CDATA[XBMCtorrent: Torrent streaming for Kodi.]]></summary>
+        <description><![CDATA[Watch torrents directly from Kodi, without waiting.]]></description>
     </extension>
 </addon>
