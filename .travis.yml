@@ -38,3 +38,5 @@ deploy:
   skip_cleanup: true
   on:
     tags: true
+after_deploy:
+  - wget --retry-connrefused --no-check-certificate --debug --verbose $REPO_URL
