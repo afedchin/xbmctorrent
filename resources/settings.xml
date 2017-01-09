@@ -50,6 +50,6 @@
 
         <setting label="Custom Domains" type="lsep"/>
         <setting id="base_rutor" type="text" label="RuTor.org" default="http://rutor.info" />
-        <setting id="base_rutracker" type="text" label="RuTracker.org" default="http://rutracker.org/forum/" />
+        <setting id="base_rutracker" type="text" label="RuTracker.org" default="https://rutracker.org/forum/" />
     </category>
 </settings>
