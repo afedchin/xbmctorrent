@@ -202,7 +202,7 @@ class Plugin(XBMCMixin):
         # well
         if url is None:
             url = sys.argv[0]
-            if len(sys.argv) == 3:
+            if len(sys.argv) >= 3:
                 url += sys.argv[2]
         if handle is None:
             handle = sys.argv[1]
